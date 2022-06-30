@@ -4,10 +4,9 @@ public class treciaUzduotisWhileCiklas {
         System.out.println(masyvoSuskaiciavimas(x));
     }
     public  static double masyvoSuskaiciavimas(double[] skaicius){
-        double x = 0;
         int i = 0;
         double skaicius1 = 0;
-        while (x++ < skaicius.length) {
+        while (i++ < skaicius.length) {
             skaicius1 = skaicius1 + skaicius[i];
             i++;
         }

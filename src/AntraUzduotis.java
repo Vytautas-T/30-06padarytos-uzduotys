@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class AntraUzduotis {
@@ -9,10 +8,10 @@ public class AntraUzduotis {
         int length = x.length + y.length;
        // System.out.println(length);
         int[] array = new int[length];
-        kopijuotiElementus(x,array,y);
+        System.out.println(kopijuotiElementus(x,array,y));
     }
 
-    public static void kopijuotiElementus(int[] x, int[] array, int[] y) {
+    public static String kopijuotiElementus(int[] x, int[] array, int[] y) {
         int skaicius = 0;
         for (int element : x) {
             array[skaicius] = element;
@@ -22,6 +21,6 @@ public class AntraUzduotis {
             array[skaicius] = element;
             skaicius++;
         }
-        System.out.println(Arrays.toString(array));
+        return Arrays.toString(array);
     }
 }
